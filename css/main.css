@@ -1,0 +1,170 @@
+body {color: #000;}
+
+@font-face {
+	font-family: 'fontello';
+	src: url('../font/fontello.eot');
+	src: url('../font/fontello.eot') format('embedded-opentype'),
+	url('../font/fontello.woff') format('woff'),
+	url('../font/fontello.ttf') format('truetype'),
+	url('../font/fontello.svg?4789795#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body#objectified-bg {
+	background: #000 url(../images/objectified-bg.jpg) no-repeat top center fixed;
+}
+
+.logo {
+	float: right;
+}
+
+.logo img {
+    width: 400px;
+    margin-top: 20px;
+}
+
+.tagline {
+	position: absolute;
+	top: 28px;
+	float: left;
+	width: 450px;
+}
+
+.tagline h1, .time-network h1 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 50px;
+	line-height: 1;
+	background-color: #fbe04a;
+	padding: 12px 30px 17px 30px;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.video-container iframe {
+	background-color: #fbe04a;
+	padding: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 100%;
+	margin: 0 5%;
+}
+
+.time-network {
+    width: 633px;
+    bottom: 0;
+    right: 0;
+    float: right;
+}
+
+.time-network sup {
+    font-size: 17px;
+    top: -27px;
+}
+
+.time-network h1 {
+	padding: 22px 30px 15px 30px;
+    margin-top: -20px;
+}
+
+.time-network img {
+    width: 72px;
+}
+
+.social-media {
+	float: left;
+    margin-top: 10px;
+}
+
+.social-media i {
+    margin-right: 30px;
+    font-family: "fontello";
+	font-size: 50px;
+	font-style: normal;
+    color: #fbe04a;
+}
+
+.social-media a:hover,
+.social-media a:focus {
+    text-decoration: none;
+}
+
+.social-media a:hover i {
+    color: #d6be3c;
+}
+
+.icon-mail:before { content: '\e800'; }
+.icon-facebook:before { content: '\e803'; } 
+.icon-twitter:before { content: '\e804'; } 
+
+
+@media (max-width: 991px) {
+	.tagline {
+	    position: absolute;
+	    top: 22px;
+	    width: 340px;
+	}
+	.tagline h1, .time-network h1 {
+		font-size: 36px;
+	}
+	.logo img {
+    	width: 300px;
+	}
+	.time-network {
+   		width: 502px;
+	}
+	.social-media i {
+		font-size: 45px;
+	}
+}
+
+@media (max-width: 767px) {
+	.logo,
+	.social-media {
+		float: left;
+		text-align: center;
+    	width: 100%;
+	}
+	.tagline {
+	    position: relative;
+	    left: 8vw;
+	    width: initial;
+	    margin-top: -35px;
+	}
+	.tagline h1, .time-network h1 {
+	    font-size: 4.75vw;
+	    padding: 12px 15px 19px 15px;
+	}
+	.time-network h1 {
+	    padding: 10px 15px 5px 15px;
+	    margin-top: -1px;
+	}
+	.time-network {
+	    position: relative;
+	    width: initial;
+	    right: 7vw;
+	}
+	.time-network sup {
+	    font-size: 12px;
+	    top: -13px;
+	}
+	.video-container iframe {
+		padding: 7px;
+	}
+	.time-network img {
+	    width: 42px;
+	}
+	.social-media i {
+    margin: 0 10px;
+	}
+}
+
