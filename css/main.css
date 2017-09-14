@@ -42,20 +42,13 @@ body#objectified-bg {
 }
 
 .video-container {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+	padding-bottom: 52.25%; /* 16:9 */
 }
 
-.video-container iframe {
+.video-container video {
 	background-color: #fbe04a;
 	padding: 15px;
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 90%;
-	height: 100%;
 	margin: 0 5%;
 }
 
