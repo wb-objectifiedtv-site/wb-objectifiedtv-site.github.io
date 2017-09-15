@@ -28,16 +28,25 @@
 
 
   <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
-  <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/main.css" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106337001-1"></script>
-  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}; gtag('js', new Date()); gtag('config', 'UA-106337001-1'); </script>
+  <script>
+    window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}; gtag('js', new Date()); gtag('config', 'UA-106337001-1')
+  </script>
+
 </head>
 <body id="objectified-bg">
 <div class="container">
@@ -52,7 +61,7 @@
 
   <div class="row">
     <div class="video-container embed-responsive embed-responsive-16by9">
-    <video autoplay muted poster="images/shaq-video-player-still-small-FRIDAY.jpg" controls>
+    <video id="video" autoplay muted poster="images/shaq-video-player-still-small-FRIDAY.jpg" controls>
       <source src="http://objectifiedtv.com/images/objectified_launch_30_tag_sept_17.mp4" type="video/mp4">
     </video>
   </div>
@@ -70,9 +79,20 @@
   </div>
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+
+  var video=document.getElementById("video");
+
+  $(video).on("click", function(e){
+    if(video.muted){
+      video.muted = false;
+    }
+    else{
+      video.muted = true;
+    }
+  });
+
+</script>
+
 </body>
 </html>
