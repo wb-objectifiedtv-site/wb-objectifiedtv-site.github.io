@@ -63,10 +63,12 @@ h2 {
   padding-left: 80px;
   width: 40%; }
 
-.life-stories-title-f1 {
+.life-stories-title-f1,
+.season-guests-title-f1 {
   color: #fff; }
 
-.life-stories-title-f2 {
+.life-stories-title-f2,
+.season-guests-title-f2 {
   color: #EBC647; }
 
 .life-stories-blurbs {
@@ -126,7 +128,46 @@ h2 {
 
 .bottom-half {
   max-width: 1290px;
+  padding-top: 50px;
   margin: 0 auto; }
+
+.season-guests-title {
+  background-color: red;
+  padding: 50px 0; }
+
+.season-guests-row {
+  background-color: blue;
+  margin-bottom: 50px; }
+
+.guest-image {
+  width: calc(100% + 1px);
+  padding: 2px;
+  background: #af8736;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #af8736 0%, #ebc647 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #af8736 0%, #ebc647 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #af8736 0%, #ebc647 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af8736', endColorstr='#ebc647',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.guest-image-width {
+  width: 100%; }
+
+.guest-date {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #9B9B9B; }
+
+.guest-name {
+  font-size: 1.75em;
+  font-family: "Proxima Nova Extra Condensed";
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #EBC647; }
 
 @media (max-width: 1200px) {
   .logo img {
