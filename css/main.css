@@ -12,7 +12,7 @@ div {
   font-weight: normal;
   font-style: normal; }
 body#objectified-bg {
-  background: #130900 url(../images/objectified-season-2-bg.jpg) no-repeat top center fixed; }
+  background: #130900 url(../images/objectified-season-2-bg.jpg) top center fixed; }
 
 h2 {
   margin: 0;
@@ -162,7 +162,7 @@ h2 {
 
 .guest-date {
   margin-top: 10px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.25em;
   color: #9B9B9B; }
 
