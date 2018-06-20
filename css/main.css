@@ -177,6 +177,29 @@ h2 {
   text-transform: uppercase;
   color: #EBC647; }
 
+.video-container > video.has-media-controls-hidden::-webkit-media-controls {
+  display: none; }
+
+.video-overlay-play-button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px calc(50% - 50px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 0.95;
+  cursor: pointer;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  transition: opacity 150ms; }
+
+.video-overlay-play-button:hover {
+  opacity: 1; }
+
+.video-overlay-play-button.is-hidden {
+  display: none; }
+
 @media (max-width: 1200px) {
   h2 {
     font-size: 3em; }
@@ -298,6 +321,18 @@ h2 {
   .season-guests-celebrity {
     width: 50%;
     height: inherit;
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+
+  .video-overlay-play-button {
+    padding: 10px calc(54% - 50px); }
+
+  .st0 {
+    stroke-width: 10px !important; }
+
+  .video-container {
+    padding-bottom: 100%; }
+
+  video[poster] {
+    object-fit: cover; } }
 
 /*# sourceMappingURL=main.css.map */

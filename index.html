@@ -37,7 +37,7 @@
   <![endif]-->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="bootstrap/js/bootstrap.min.js"></script>
 
@@ -70,8 +70,8 @@
   </div>
   <div class="video">
     <div class="video-container">
-      <video controls <!-- autoplay --> muted>
-      <source src="https://assets.tmz.com/sponsorships/objectified_launch_30_tag_sept_17_compressed.mp4" type="video/mp4">
+      <video controls poster="images/celebs/video-still-magic.jpg">
+      <source src="images/videos/episode1-magic.mp4" type="video/mp4">
       </video>
     </div>
   </div>
@@ -200,6 +200,42 @@
 
 </div>
 
+<script type="text/javascript">
+  var videoPlayButton,
+      videoContainer = document.getElementsByClassName('video-container')[0],
+      video = document.getElementsByTagName('video')[0],
+      videoMethods = {
+        renderVideoPlayButton: function() {
+          if (videoContainer.contains(video)) {
+            this.formatVideoPlayButton()
+            video.classList.add('has-media-controls-hidden')
+            videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0]
+            videoPlayButton.addEventListener('click', this.hideVideoPlayButton)
+          }
+        },
 
+        formatVideoPlayButton: function() {
+          videoContainer.insertAdjacentHTML('beforeend', '\
+            <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
+                <style type="text/css">\
+                .st0{stroke:#EBC547;stroke-width:6;stroke-miterlimit:10;}\
+                .st1{fill:#EBC547;}\
+                </style>\
+              <rect class="st0" width="200" height="200" fill-opacity="0.75"/>\
+              <polygon class="st1" points="76.7,70.7 76.7,133.3 131.3,102 "/>\
+            </svg>\
+            ')
+        },
+
+        hideVideoPlayButton: function() {
+          video.play()
+          videoPlayButton.classList.add('is-hidden')
+          video.classList.remove('has-media-controls-hidden')
+          video.setAttribute('controls', 'controls')
+        }
+      }
+
+  videoMethods.renderVideoPlayButton()
+</script>
 </body>
 </html>
