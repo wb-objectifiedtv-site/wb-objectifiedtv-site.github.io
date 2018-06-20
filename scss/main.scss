@@ -4,9 +4,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 div {
   display: block;
 }
+
 @font-face {
   font-family: 'fontello';
   src: url('../font/fontello.eot');
@@ -17,6 +19,7 @@ div {
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'ProximaNovaExCn_Bold';
   src: url("../font/proxima-nova-extra-condensed/bold-webfont.woff2") format("woff2"), url("../font/proxima-nova-extra-condensed/bold-webfont.woff") format("woff"), url("../font/proxima-nova-extra-condensed/bold-webfont.ttf") format("truetype");
@@ -34,9 +37,12 @@ div {
   src: url("../font/proxima-nova-extra-condensed/black-italic-webfont.woff2") format("woff2"), url("../font/proxima-nova-extra-condensed/black-italic-webfont.woff") format("woff"), url("../font/proxima-nova-extra-condensed/black-italic-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
+
+
 body#objectified-bg {
   background: #130900 url(../images/objectified-season-2-bg.jpg) top center fixed;
 }
+
 h2 {
   margin: 0;
   font-size: 3.75em;
@@ -44,6 +50,7 @@ h2 {
   font-weight: 900;
   text-transform: uppercase;
 }
+
 .top-half {
   position: relative;
   display: flex;
@@ -53,12 +60,14 @@ h2 {
   max-width: 1290px;
   margin:  0 auto;
 }
+
 .logo {
   width: 65%;
   margin-left: 80px;
   flex: 1 0 auto;
   order: 1;
 }
+
 .time {
   position: absolute;
   top: 20px;
@@ -68,36 +77,81 @@ h2 {
   order: 2;
   text-align: center;
 }
+
 .video {
   width: 100%;
   flex: 1 0 auto;
   order: 4;
 }
+
+.video-border {
+  width: 100%;
+  padding: 4px;
+  background: #af8736;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #af8736 0%, #ebc647 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #af8736 0%, #ebc647 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #af8736 0%, #ebc647 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af8736', endColorstr='#ebc647',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+
+  @media (max-width: 768px) {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+.video-poster {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/celebs/video-still-magic.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.is-hidden {
+  display: none;
+}
+
 .life-stories {
   width: 100%;
   flex: 1 0 auto;
   order: 3;
   padding: 20px 20px 50px;
 }
+
 .life-stories-title {
   float: left;
   padding-left: 80px;
   width: 40%;
 }
+
 .life-stories-title-f1,
 .season-guests-title-f1 {
   color: #fff;
 }
+
 .life-stories-title-f2,
 .season-guests-title-f2 {
   color: #EBC647;
 }
+
 .life-stories-blurbs {
   float: left;
   width: 60%;
   font-size: 1.35em;
   padding: 5px 80px 5px 10px;
 }
+
 .nav-stripe {
   position: absolute;
   top: 0;
@@ -119,38 +173,38 @@ h2 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfa144', endColorstr='#af8736',GradientType=0 ); /* IE6-9 */
   }
 }
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 3px;
   height: 0;
 }
+
 .video-container video {
-  padding: 4px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #af8736; /* Old browsers */
-  background: -moz-linear-gradient(45deg, #af8736 0%, #ebc647 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #af8736 0%,#ebc647 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #af8736 0%,#ebc647 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af8736', endColorstr='#ebc647',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
 .bottom-half {
   max-width: 1290px;
   padding-top: 50px;
   margin:  0 auto;
 }
+
 .season-guests-title {
   padding: 50px 0;
 }
+
 .season-guests-row {
   margin-bottom: 50px;
   padding: 0;
   font-size: 0;
 }
+
 .season-guests-celebrity {
   display: inline-block;
   width: 20%;
@@ -159,6 +213,7 @@ h2 {
   vertical-align: top;
   font-size: 14px;
 }
+
 .guest-image {
   width: calc(100% + 1px);
   padding: 4px;
@@ -168,15 +223,18 @@ h2 {
   background: linear-gradient(45deg, #af8736 0%,#ebc647 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af8736', endColorstr='#ebc647',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
 .guest-image-width {
   width: 100%;
 }
+
 .guest-date {
   margin-top: 10px;
   font-weight: 700;
   font-size: 1.25em;
   color: #9B9B9B;
 }
+
 .guest-name {
   font-size: 1.75em;
   font-family: 'ProximaNovaExCn_Black_Italic';
@@ -185,9 +243,11 @@ h2 {
   text-transform: uppercase;
   color: #EBC647;
 }
+
 .video-container > video.has-media-controls-hidden::-webkit-media-controls {
   display: none;
 }
+
 .video-overlay-play-button {
   box-sizing: border-box;
   width: 100%;
@@ -202,12 +262,15 @@ h2 {
   background-image: linear-gradient(transparent, rgba(0,0,0,.5));
   transition: opacity 150ms;
 }
+
 .video-overlay-play-button:hover {
   opacity: 1;
 }
+
 .video-overlay-play-button.is-hidden {
   display: none;
 }
+
 @media (max-width: 1200px) {
   h2 {
     font-size: 3em;
@@ -238,6 +301,8 @@ h2 {
     margin-bottom: 0;
   }
 }
+
+
 @media (max-width: 991px) {
   .nav-stripe {
     height: 120px;
@@ -271,6 +336,7 @@ h2 {
     margin-right: 50px;
   }
 }
+
 @media (max-width: 768px) {
   .nav-stripe {
     height: 144px;
@@ -334,6 +400,7 @@ h2 {
     padding: 0;
   }
 }
+
 @media (max-width: 620px) {
   .time img {
     width: initial;
@@ -348,9 +415,6 @@ h2 {
   }
   .st0 {
     stroke-width: 10px !important;
-  }
-  .video-container {
-    padding-bottom: 100%;
   }
   video[poster] {
     object-fit: cover;
