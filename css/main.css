@@ -1,6 +1,8 @@
 body {
   color: #fff;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 div {
   display: block; }
@@ -179,6 +181,9 @@ h2 {
   h2 {
     font-size: 3em; }
 
+  .nav-stripe {
+    height: 130px; }
+
   .logo img {
     width: 400px; }
 
@@ -188,6 +193,9 @@ h2 {
   .life-stories {
     padding: 30px 20px; }
 
+  .video {
+    padding: 0 80px; }
+
   .bottom-half {
     padding: 50px 20px 50px 100px; }
 
@@ -196,6 +204,9 @@ h2 {
     height: 300px;
     margin-bottom: 0; } }
 @media (max-width: 991px) {
+  .nav-stripe {
+    height: 120px; }
+
   .logo {
     margin-left: 10%; }
 
@@ -204,6 +215,9 @@ h2 {
     margin-right: 10%; }
     .time img {
       width: 250px; }
+
+  .video {
+    padding: 0 100px; }
 
   .life-stories-title,
   .life-stories-blurbs {
@@ -220,6 +234,9 @@ h2 {
   .season-guests-title {
     margin-right: 50px; } }
 @media (max-width: 768px) {
+  .nav-stripe {
+    height: 144px; }
+
   .logo {
     width: 100%;
     order: 1;
@@ -231,16 +248,18 @@ h2 {
   .time {
     order: 3;
     position: static;
+    padding: 10px 0;
     width: 100%;
-    margin-top: 10px;
-    text-align: center; }
+    text-align: center;
+    background-color: #000; }
 
   .life-stories {
     order: 4;
     padding: 30px; }
 
   .video {
-    order: 2; }
+    order: 2;
+    padding: 0; }
 
   .life-stories-title,
   .life-stories-blurbs {
@@ -256,7 +275,7 @@ h2 {
     line-height: .9; }
 
   .season-guests-title {
-    padding: 0 0 80px 30px; }
+    padding: 0 0 50px 30px; }
     .season-guests-title h2 {
       float: left;
       margin-right: 6px;
@@ -273,6 +292,9 @@ h2 {
   .bottom-half {
     padding: 0; } }
 @media (max-width: 620px) {
+  .time img {
+    width: initial; }
+
   .season-guests-celebrity {
     width: 50%;
     height: inherit;
