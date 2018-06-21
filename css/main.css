@@ -381,5 +381,23 @@ h2 {
 
   video[poster] {
     object-fit: cover; } }
+@media (max-width: 350px) {
+  .nav-stripe {
+    height: 122px; }
+
+  .logo img {
+    width: 275px; }
+
+  .time img {
+    width: 260px; }
+
+  .life-stories-title h2 {
+    font-size: 2.5em; }
+
+  .life-stories-blurbs {
+    font-size: 1.125em; }
+
+  .season-guests-celebrity {
+    margin-bottom: 35px; } }
 
 /*# sourceMappingURL=main.css.map */
