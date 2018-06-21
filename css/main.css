@@ -65,7 +65,8 @@ h2 {
 .video {
   width: 100%;
   flex: 1 0 auto;
-  order: 4; }
+  order: 4;
+  background: #000; }
 
 .video-border {
   width: 100%;
@@ -93,13 +94,17 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #000;
   background-image: url(../images/celebs/video-still-magic.jpg);
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  opacity: 0; }
+  .video-poster.is-loaded {
+    opacity: 1; }
 
 .is-hidden {
-  display: none; }
+  display: none !important; }
 
 .life-stories {
   width: 100%;
@@ -211,7 +216,6 @@ h2 {
 .guest-name {
   font-size: 1.75em;
   font-family: 'ProximaNovaExCn_Black_Italic';
-  font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
   color: #EBC647; }
@@ -224,16 +228,20 @@ h2 {
   width: 100%;
   height: 100%;
   padding: 10px calc(50% - 50px);
+  z-index: 100;
   position: absolute;
   top: 0;
   left: 0;
   display: block;
-  opacity: 0.95;
+  opacity: 0;
   cursor: pointer;
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
   transition: opacity 150ms; }
 
-.video-overlay-play-button:hover {
+.video-overlay-play-button.is-loaded {
+  opacity: 0.95; }
+
+.video-overlay-play-button.is-loaded:hover {
   opacity: 1; }
 
 .video-overlay-play-button.is-hidden {
