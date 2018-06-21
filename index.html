@@ -11,9 +11,9 @@
 
   <meta property="og:title" content="Objectified">
   <meta property="og:type" content="website" />
-  <meta property="og:description" content="Watch Objectified, Sundays at 8pm ET / 5pm PT on the Fox News Channel" />
-  <meta property="og:image" content="http://objectifiedtv.com/images/og-img-objectified-480x360.jpg" />
-  <meta property="og:image" content="http://objectifiedtv.com/images/og-img-objectified-1200x630.jpg" />
+  <meta property="og:description" content="Watch Objectified, Sundays at 8pm ET / 5pm PT or 11pm ET / 8pm PT on Fox News Channel." />
+  <meta property="og:image" content="http://objectifiedtv.com/images/og-image-objectified-480x360.jpg" />
+  <meta property="og:image" content="http://objectifiedtv.com/images/og-image-objectified-1200x630.jpg" />
   <meta property="og:url" content="http://objectifiedtv.com">
 
   <link rel="icon" type="image/x-icon" href="http://objectifiedtv.com/images/favicon.ico" />
@@ -26,8 +26,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="http://objectifiedtv.com/images/apple-touch-icon-144x144.jpg"/>
   <link rel="apple-touch-icon" sizes="152x152" href="http://objectifiedtv.com/images/apple-touch-icon-152x152.jpg"/>
 
-
-  <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -38,7 +37,7 @@
   <![endif]-->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="bootstrap/js/bootstrap.min.js"></script>
 
@@ -49,35 +48,218 @@
 
 </head>
 <body id="objectified-bg">
-<div class="container">
-  <div class="row">
-    <div class="logo">
-      <img src="images/objectified-logo.png">
-    </div>
-    <div class="tagline">
-      <h1>Life Stories Like You've Never Seen</h1>
-    </div>
+
+<div class="nav-stripe"></div>
+
+<div class="top-half">
+  <div class="logo">
+    <img src="images/objectified-logo.png">
   </div>
-  <div class="row">
-    <div class="video-container embed-responsive embed-responsive-16by9">
-    <video id="video" autoplay poster="images/shaq-video-player-still-small-FRIDAY.jpg" controls>
-      <source src="https://tmzvod-a.akamaihd.net/tmz/2017-12/13/0_d4abkhhy_0_585nbqh7.mp4" type="video/mp4">
-    </video>
-  </div>
+  <div class="time">
+    <img src="images/Day_TimeCTA.png">
   </div>
 
-  <div class="row">
-    <div class="time-network">
-      <h1>Check local listings <img src="images/fox.png"></h1>
+
+  <div class="life-stories">
+    <div class="life-stories-title">
+      <h2 class="life-stories-title-f1">Life Stories Like</h2>
+      <h2 class="life-stories-title-f2">You've Never Seen</h2>
     </div>
-    <div class="social-media">
-      <a href="http://www.facebook.com/share.php?u=http://objectifiedtv.com/&title=Watch Objectified, Sundays at 8pm ET / 5pm PT on the Fox News Channel" target="popup" onclick="window.open('http://www.facebook.com/share.php?u=http://objectifiedtv.com/&title=Watch Objectified, Sundays at 8pm ET / 5pm PT on the Fox News Channel','popup','width=600,height=600'); return false;"><i class="icon-facebook"></i></a>
-      <a href="http://twitter.com/home?status=Watch Objectified, Sundays at 8pm ET / 5pm PT on the Fox News Channel+http://objectifiedtv.com/" target="popup" onclick="window.open('http://twitter.com/home?status=Watch Objectified, Sundays at 8pm ET / 5pm PT on the Fox News Channel+http://objectifiedtv.com/','popup','width=600,height=600'); return false;"><i class="icon-twitter"></i></a>
-      <a href="mailto:?subject=Check out Objectified on Fox This Sunday!&amp;body=Visit http://objectifiedtv.com for a preview of &quot;Objectified&quot; – Life Stories Like You've Never Seen. Watch Objectified every Sunday at 8pm ET / 5pm PT on the Fox News Channel." title="Share by Email"><i class="icon-mail"></i></a>
+    <div class="life-stories-blurbs">
+      Each week, Harvey Levin will showcase intimate interviews with high-profile newsmakers and celebrities who will tell their life stories through certain objects they have chosen to keep close over the years. The objects are jumping points in understanding how certain experiences shaped them into who they are today.
+    </div>
+  </div>
+  <div class="video">
+    <div class="video-border">
+      <div class="video-container">
+        <video controls autoplay muted poster="images/celebs/m-video-still-magic.jpg">
+          <source src="images/videos/magicjohnson540.mp4" type="video/mp4">
+        </video>
+        <div class="video-poster"></div>
+      </div>
     </div>
   </div>
 </div>
 
+<div class="bottom-half">
+  <div class="season-guests-title col-md-2 col-sm-2 col-sm-12">
+    <h2 class="season-guests-title-f1">Season</h2>
+    <h2 class="season-guests-title-f2">Guests</h2>
+  </div>
 
+  <div class="season-guests-row col-lg-10 col-md-9 col-sm-8 col-xs-12">
+    <div class="season-guests-celebrity">
+      <div class="guest-image">
+        <img src="images/celebs/magicjohnson.jpg" class="guest-image-width">
+      </div>
+      <div class="guest-date">
+        June 24
+      </div>
+      <div class="guest-name">
+        Magic Johnson
+      </div>
+    </div>
+    <div class="season-guests-celebrity">
+      <div class="guest-image">
+        <img src="images/celebs/krisjenner.jpg" class="guest-image-width">
+      </div>
+      <div class="guest-date">
+        July 1
+      </div>
+      <div class="guest-name">
+        Kris Jenner
+      </div>
+    </div>
+    <div class="season-guests-celebrity">
+      <div class="guest-image">
+        <img src="images/celebs/dr-phil.jpg" class="guest-image-width">
+      </div>
+      <div class="guest-date">
+        July 8
+      </div>
+      <div class="guest-name">
+        Dr. Phil
+      </div>
+    </div>
+    <div class="season-guests-celebrity">
+      <div class="guest-image">
+        <img src="images/celebs/steventyler.jpg" class="guest-image-width">
+      </div>
+      <div class="guest-date">
+        July 15
+      </div>
+      <div class="guest-name">
+        Steven Tyler
+      </div>
+    </div>
+    <div class="season-guests-celebrity">
+      <div class="guest-image">
+        <img src="images/celebs/alextrebek.jpg" class="guest-image-width">
+      </div>
+      <div class="guest-date">
+        July 22
+      </div>
+      <div class="guest-name">
+        Alex Trebek
+      </div>
+    </div>
+
+    <div class="season-guests-celebrity">
+      <div class="guest-image">
+        <img src="images/celebs/pamanderson.jpg" class="guest-image-width">
+      </div>
+      <div class="guest-date">
+        July 29
+      </div>
+      <div class="guest-name">
+        Pamela Anderson
+      </div>
+    </div>
+    <div class="season-guests-celebrity">
+      <div class="guest-image">
+        <img src="images/celebs/pitbull.jpg" class="guest-image-width">
+      </div>
+      <div class="guest-date">
+        August 5
+      </div>
+      <div class="guest-name">
+        Pitbull
+      </div>
+    </div>
+    <div class="season-guests-celebrity">
+      <div class="guest-image">
+        <img src="images/celebs/willienelson.jpg" class="guest-image-width">
+      </div>
+      <div class="guest-date">
+        August 12
+      </div>
+      <div class="guest-name">
+        Willie Nelson
+      </div>
+    </div>
+    <div class="season-guests-celebrity">
+      <div class="guest-image">
+        <img src="images/celebs/danawhite.jpg" class="guest-image-width">
+      </div>
+      <div class="guest-date">
+        August 19
+      </div>
+      <div class="guest-name">
+        Dana White
+      </div>
+    </div>
+    <div class="season-guests-celebrity">
+      <div class="guest-image">
+        <img src="images/celebs/jaclynsmith.jpg" class="guest-image-width">
+      </div>
+      <div class="guest-date">
+        August 26
+      </div>
+      <div class="guest-name">
+        Jaclyn Smith
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script type="text/javascript">
+  var videoPlayButton,
+      videoContainer = document.getElementsByClassName('video-container')[0],
+      videoPoster = document.getElementsByClassName('video-poster')[0],
+      video = document.getElementsByTagName('video')[0],
+
+      videoMethods = {
+        renderVideoPlayButton: function() {
+          if (videoContainer.contains(video)) {
+            videoPoster.classList.add('is-hidden')
+            this.formatVideoPlayButton()
+            videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0]
+            videoPlayButton.classList.add('is-hidden')
+            videoPlayButton.addEventListener('click', this.hideVideoPlayButton)
+          }
+        },
+
+        formatVideoPlayButton: function() {
+          videoContainer.insertAdjacentHTML('beforeend', '\
+		<svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
+			<style type="text/css">\
+			.st0{stroke:#EBC547;stroke-width:6;stroke-miterlimit:10;}\
+			.st1{fill:#EBC547;}\
+			</style>\
+		  <rect class="st0" width="200" height="200" fill-opacity="0.75"/>\
+		  <polygon class="st1" points="76.7,70.7 76.7,133.3 131.3,102 "/>\
+		</svg>\
+		')
+        },
+
+        hideVideoPlayButton: function() {
+          video.play()
+          videoPoster.classList.add('is-hidden')
+          videoPlayButton.classList.add('is-hidden')
+          video.classList.remove('has-media-controls-hidden')
+          video.setAttribute('controls', 'controls')
+        },
+
+        showVideoPlayButton: function() {
+          videoPoster.classList.remove('is-hidden')
+          videoPlayButton.classList.remove('is-hidden')
+          video.classList.remove('has-media-controls-hidden')
+          video.removeAttribute('controls')
+        },
+      }
+
+  window.addEventListener("load", onload);
+
+  function onload () {
+    video.onended = onended;
+  }
+  function onended () {
+    videoMethods.showVideoPlayButton()
+  }
+
+  videoMethods.renderVideoPlayButton()
+</script>
 </body>
 </html>
