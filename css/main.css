@@ -65,8 +65,7 @@ h2 {
 .video {
   width: 100%;
   flex: 1 0 auto;
-  order: 4;
-  background: #000; }
+  order: 4; }
 
 .video-border {
   width: 100%;
@@ -247,6 +246,12 @@ h2 {
 .video-overlay-play-button.is-hidden {
   display: none; }
 
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .video {
+    padding: 0 40px; }
+
+  .bottom-half {
+    padding: 50px 40px 0 40px; } }
 @media (max-width: 1200px) {
   h2 {
     font-size: 3em; }

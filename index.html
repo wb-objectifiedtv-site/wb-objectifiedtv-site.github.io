@@ -72,7 +72,7 @@
   <div class="video" id="video">
     <div class="video-border">
       <div class="video-container">
-        <video controls autoplay>
+        <video controls autoplay muted >
           <source src="images/videos/episode1-magic.mp4" type="video/mp4">
         </video>
         <div class="video-poster" id="video-poster"></div>
@@ -213,41 +213,43 @@
 </div>
 
 <script type="text/javascript">
-  var videoPlayButton,
-      videoPoster = document.getElementById('video-poster'),
-      videoPlayButton = document.getElementById('video-overlay-play-button'),
-      video = document.getElementsByTagName('video')[0],
+  var video = document.getElementsByTagName("video")[0];
+  var videoPoster = document.getElementById("video-poster");
+  var videoPlayButton = document.getElementById("video-overlay-play-button");
 
-      videoMethods = {
-        hideVideoPlayButton: function() {
-          video.play()
-          videoPoster.classList.add('is-hidden')
-          videoPlayButton.classList.add('is-hidden')
-          video.classList.remove('has-media-controls-hidden')
-          video.setAttribute('controls', 'controls')
-        },
+  videoMethods = {
+    hideVideoPlayButton: function() {
+      video.play();
+      videoPoster.classList.add("is-hidden");
+      videoPlayButton.classList.add("is-hidden");
+    },
 
-        showVideoPlayButton: function() {
-          videoPoster.classList.remove('is-hidden')
-          videoPlayButton.classList.remove('is-hidden')
-          video.classList.remove('has-media-controls-hidden')
-          video.removeAttribute('controls')
-        },
-      }
+    playVideoPlayButton: function() {
+      video.muted = !video.muted;
+      video.play();
+      videoPoster.classList.add("is-hidden");
+      videoPlayButton.classList.add("is-hidden");
+    },
 
-  videoPlayButton.addEventListener('click', videoMethods.hideVideoPlayButton);
+    showVideoPlayButton: function() {
+      videoPoster.classList.remove("is-hidden");
+      videoPlayButton.classList.remove("is-hidden");
+    },
+  }
+
+  videoPlayButton.addEventListener("click", videoMethods.playVideoPlayButton);
 
   window.addEventListener("DOMContentLoaded", onload, false);
 
   function onload () {
-    videoPoster.classList.add('is-loaded')
-    videoPlayButton.classList.add('is-loaded')
+    videoPoster.classList.add("is-loaded");
+    videoPlayButton.classList.add("is-loaded");
     video.onended = onended;
     video.onplay = onplay;
   }
 
   function onended () {
-    videoMethods.showVideoPlayButton()
+    videoMethods.showVideoPlayButton();
   }
 
   function onplay () {
