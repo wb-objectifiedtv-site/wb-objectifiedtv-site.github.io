@@ -225,7 +225,9 @@
     },
 
     playVideoPlayButton: function() {
-      video.muted = !video.muted;
+      if(video.muted){
+        video.muted = false;
+      }
       video.play();
       videoPoster.classList.add("is-hidden");
       videoPlayButton.classList.add("is-hidden");
