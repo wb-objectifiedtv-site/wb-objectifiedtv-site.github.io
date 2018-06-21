@@ -112,14 +112,20 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #000;
   background-image: url(../images/celebs/video-still-magic.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0;
+
+  &.is-loaded {
+    opacity: 1;
+  }
 }
 
 .is-hidden {
-  display: none;
+  display: none !important;
 }
 
 .life-stories {
@@ -160,6 +166,7 @@ h2 {
   height: 144px;
   background-color: #000;
   z-index: -1;
+
   &::after {
     position: absolute;
     bottom: 0;
@@ -172,6 +179,7 @@ h2 {
     background: linear-gradient(to bottom, #cfa144 57%,#af8736 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfa144', endColorstr='#af8736',GradientType=0 ); /* IE6-9 */
   }
+
 }
 
 .video-container {
@@ -238,7 +246,6 @@ h2 {
 .guest-name {
   font-size: 1.75em;
   font-family: 'ProximaNovaExCn_Black_Italic';
-  font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
   color: #EBC647;
@@ -253,22 +260,36 @@ h2 {
   width: 100%;
   height: 100%;
   padding: 10px calc(50% - 50px);
+  z-index: 100;
   position: absolute;
   top: 0;
   left: 0;
   display: block;
-  opacity: 0.95;
+  opacity: 0;
   cursor: pointer;
-  background-image: linear-gradient(transparent, rgba(0,0,0,.5));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
   transition: opacity 150ms;
 }
 
-.video-overlay-play-button:hover {
+.video-overlay-play-button.is-loaded {
+  opacity: 0.95;
+}
+
+.video-overlay-play-button.is-loaded:hover {
   opacity: 1;
 }
 
 .video-overlay-play-button.is-hidden {
   display: none;
+}
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .video {
+    padding: 0 40px;
+  }
+  .bottom-half {
+    padding: 50px 40px 0 40px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -421,5 +442,26 @@ h2 {
   }
   video[poster] {
     object-fit: cover;
+  }
+}
+
+@media (max-width: 350px) {
+  .nav-stripe {
+    height: 122px;
+  }
+  .logo img {
+    width: 275px;
+  }
+  .time img {
+    width: 260px;
+  }
+  .life-stories-title h2 {
+    font-size: 2.5em;
+  }
+  .life-stories-blurbs {
+    font-size: 1.125em;
+  }
+  .season-guests-celebrity {
+    margin-bottom: 35px;
   }
 }
