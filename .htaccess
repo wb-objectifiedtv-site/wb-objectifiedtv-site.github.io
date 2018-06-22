@@ -1,0 +1,14 @@
+Options +FollowSymlinks
+
+RewriteEngine on
+
+
+RewriteCond %{HTTP_HOST} ^objectifiedtv.com
+RewriteRule (.*) http://www.objectifiedtv.com/$1 [R=301,L]
+
+
+RewriteCond %{HTTP_HOST} ^objectifiedtv.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.objectifiedtv.com$
+RewriteRule ^/?$ "http://www.tmz.com" [R=301,L]
+
+ErrorDocument 404 http://www.objectifiedtv.com/404.html
