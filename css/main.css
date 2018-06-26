@@ -2,41 +2,53 @@ body {
   color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
 
 div {
-  display: block; }
+  display: block;
+}
 
 @font-face {
   font-family: 'fontello';
   src: url("../font/fontello.eot");
   src: url("../font/fontello.eot") format("embedded-opentype"), url("../font/fontello.woff") format("woff"), url("../font/fontello.ttf") format("truetype"), url("../font/fontello.svg?4789795#fontello") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'ProximaNovaExCn_Bold';
   src: url("../font/proxima-nova-extra-condensed/bold-webfont.woff2") format("woff2"), url("../font/proxima-nova-extra-condensed/bold-webfont.woff") format("woff"), url("../font/proxima-nova-extra-condensed/bold-webfont.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'ProximaNovaExCn_Black';
   src: url("../font/proxima-nova-extra-condensed/black-webfont.woff2") format("woff2"), url("../font/proxima-nova-extra-condensed/black-webfont.woff") format("woff"), url("../font/proxima-nova-extra-condensed/black-webfont.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'ProximaNovaExCn_Black_Italic';
   src: url("../font/proxima-nova-extra-condensed/black-italic-webfont.woff2") format("woff2"), url("../font/proxima-nova-extra-condensed/black-italic-webfont.woff") format("woff"), url("../font/proxima-nova-extra-condensed/black-italic-webfont.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+}
+
 body#objectified-bg {
-  background: #130900 url(../images/objectified-season-2-bg.jpg) top center fixed; }
+  background: #130900 url(../images/objectified-season-2-bg.jpg) top center fixed;
+}
 
 h2 {
   margin: 0;
   font-size: 3.75em;
   font-family: 'ProximaNovaExCn_Black_Italic';
   font-weight: 900;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .top-half {
   position: relative;
@@ -45,13 +57,15 @@ h2 {
   flex-direction: column;
   width: 100%;
   max-width: 1290px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .logo {
   width: 65%;
   margin-left: 80px;
   flex: 1 0 auto;
-  order: 1; }
+  order: 1;
+}
 
 .time {
   position: absolute;
@@ -60,12 +74,14 @@ h2 {
   width: 570px;
   flex: 1 0 auto;
   order: 2;
-  text-align: center; }
+  text-align: center;
+}
 
 .video {
   width: 100%;
   flex: 1 0 auto;
-  order: 4; }
+  order: 4;
+}
 
 .video-border {
   width: 100%;
@@ -78,12 +94,16 @@ h2 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #af8736 0%, #ebc647 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af8736', endColorstr='#ebc647',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
-  @media (max-width: 768px) {
-    .video-border {
-      padding: 0;
-      background: transparent; } }
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#af8736', endColorstr='#ebc647', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+@media (max-width: 768px) {
+  .video-border {
+    padding: 0;
+    background: transparent;
+  }
+}
 
 .video-poster {
   position: absolute;
@@ -98,37 +118,46 @@ h2 {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0; }
-  .video-poster.is-loaded {
-    opacity: 1; }
+  opacity: 0;
+}
+
+.video-poster.is-loaded {
+  opacity: 1;
+}
 
 .is-hidden {
-  display: none !important; }
+  display: none !important;
+}
 
 .life-stories {
   width: 100%;
   flex: 1 0 auto;
   order: 3;
-  padding: 20px 20px 50px; }
+  padding: 20px 20px 50px;
+}
 
 .life-stories-title {
   float: left;
   padding-left: 80px;
-  width: 40%; }
+  width: 40%;
+}
 
 .life-stories-title-f1,
 .season-guests-title-f1 {
-  color: #fff; }
+  color: #fff;
+}
 
 .life-stories-title-f2,
 .season-guests-title-f2 {
-  color: #EBC647; }
+  color: #EBC647;
+}
 
 .life-stories-blurbs {
   float: left;
   width: 60%;
   font-size: 1.35em;
-  padding: 5px 80px 5px 10px; }
+  padding: 5px 80px 5px 10px;
+}
 
 .nav-stripe {
   position: absolute;
@@ -137,49 +166,57 @@ h2 {
   right: 0;
   height: 144px;
   background-color: #000;
-  z-index: -1; }
-  .nav-stripe::after {
-    position: absolute;
-    bottom: 0;
-    content: "";
-    height: 9px;
-    width: 100%;
-    background: #cfa144;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #cfa144 57%, #af8736 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #cfa144 57%, #af8736 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #cfa144 57%, #af8736 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfa144', endColorstr='#af8736',GradientType=0 );
-    /* IE6-9 */ }
+  z-index: -1;
+}
+
+.nav-stripe::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  height: 9px;
+  width: 100%;
+  background: #cfa144;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #cfa144 57%, #af8736 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #cfa144 57%, #af8736 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #cfa144 57%, #af8736 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cfa144', endColorstr='#af8736', GradientType=0);
+  /* IE6-9 */
+}
 
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 3px;
-  height: 0; }
+  height: 0;
+}
 
 .video-container video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .bottom-half {
   max-width: 1290px;
   padding-top: 50px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .season-guests-title {
-  padding: 50px 0; }
+  padding: 50px 0;
+}
 
 .season-guests-row {
   margin-bottom: 50px;
   padding: 0;
-  font-size: 0; }
+  font-size: 0;
+}
 
 .season-guests-celebrity {
   display: inline-block;
@@ -187,7 +224,8 @@ h2 {
   padding: 0 0 0 20px;
   margin-bottom: 50px;
   vertical-align: top;
-  font-size: 14px; }
+  font-size: 14px;
+}
 
 .guest-image {
   width: calc(100% + 1px);
@@ -200,27 +238,32 @@ h2 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #af8736 0%, #ebc647 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af8736', endColorstr='#ebc647',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#af8736', endColorstr='#ebc647', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
 
 .guest-image-width {
-  width: 100%; }
+  width: 100%;
+}
 
 .guest-date {
   margin-top: 10px;
   font-weight: 700;
   font-size: 1.25em;
-  color: #9B9B9B; }
+  color: #9B9B9B;
+}
 
 .guest-name {
   font-size: 1.75em;
   font-family: 'ProximaNovaExCn_Black_Italic';
   line-height: 1;
   text-transform: uppercase;
-  color: #EBC647; }
+  color: #EBC647;
+}
 
 .video-container > video.has-media-controls-hidden::-webkit-media-controls {
-  display: none; }
+  display: none;
+}
 
 .video-overlay-play-button {
   box-sizing: border-box;
@@ -235,174 +278,197 @@ h2 {
   opacity: 0;
   cursor: pointer;
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-  transition: opacity 150ms; }
+  transition: opacity 150ms;
+}
 
 .video-overlay-play-button.is-loaded {
-  opacity: 0.95; }
+  opacity: 0.95;
+}
 
 .video-overlay-play-button.is-loaded:hover {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .video-overlay-play-button.is-hidden {
-  display: none; }
+  display: none;
+}
 
 @media (min-width: 1201px) and (max-width: 1300px) {
   .video {
-    padding: 0 40px; }
-
+    padding: 0 40px;
+  }
   .bottom-half {
-    padding: 50px 40px 0 40px; } }
+    padding: 50px 40px 0 40px;
+  }
+}
+
 @media (max-width: 1200px) {
   h2 {
-    font-size: 3em; }
-
+    font-size: 3em;
+  }
   .nav-stripe {
-    height: 130px; }
-
+    height: 130px;
+  }
   .logo img {
-    width: 400px; }
-
+    width: 400px;
+  }
   .time img {
-    width: 300px; }
-
+    width: 300px;
+  }
   .life-stories {
-    padding: 30px 20px; }
-
+    padding: 30px 20px;
+  }
   .video {
-    padding: 0 80px; }
-
+    padding: 0 80px;
+  }
   .bottom-half {
-    padding: 50px 20px 50px 100px; }
-
+    padding: 50px 20px 50px 100px;
+  }
   .season-guests-celebrity {
     width: 25%;
     height: 300px;
-    margin-bottom: 0; } }
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 991px) {
   .nav-stripe {
-    height: 120px; }
-
+    height: 120px;
+  }
   .logo {
-    margin-left: 10%; }
-
+    margin-left: 10%;
+  }
   .time {
     text-align: right;
-    margin-right: 10%; }
-    .time img {
-      width: 250px; }
-
+    margin-right: 10%;
+  }
+  .time img {
+    width: 250px;
+  }
   .video {
-    padding: 0 100px; }
-
+    padding: 0 100px;
+  }
   .life-stories-title,
   .life-stories-blurbs {
     width: 100%;
-    padding-left: 80px; }
-
+    padding-left: 80px;
+  }
   .life-stories-title h2 {
     float: left;
-    margin-right: 7px; }
-
+    margin-right: 7px;
+  }
   .season-guests-celebrity {
-    width: 33.333333%; }
-
+    width: 33.333333%;
+  }
   .season-guests-title {
-    margin-right: 50px; } }
+    margin-right: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-stripe {
-    height: 144px; }
-
+    height: 144px;
+  }
   .logo {
     width: 100%;
     order: 1;
     margin: 10px 0 12px;
-    text-align: center; }
-    .logo img {
-      width: 340px; }
-
+    text-align: center;
+  }
+  .logo img {
+    width: 340px;
+  }
   .time {
     order: 3;
     position: static;
     padding: 10px 0;
     width: 100%;
     text-align: center;
-    background-color: #000; }
-
+    background-color: #000;
+  }
   .life-stories {
     order: 4;
-    padding: 30px; }
-
+    padding: 30px;
+  }
   .video {
     order: 2;
-    padding: 0; }
-
+    padding: 0;
+  }
   .life-stories-title,
   .life-stories-blurbs {
-    padding: 0; }
-
+    padding: 0;
+  }
   .life-stories-blurbs {
-    margin-top: 20px; }
-
+    margin-top: 20px;
+  }
   .life-stories-title h2 {
     float: initial;
     margin-right: 0;
     font-size: 2.75em;
-    line-height: .9; }
-
+    line-height: .9;
+  }
   .season-guests-title {
-    padding: 0 0 50px 30px; }
-    .season-guests-title h2 {
-      float: left;
-      margin-right: 6px;
-      font-size: 2.75em; }
-
+    padding: 0 0 50px 30px;
+  }
+  .season-guests-title h2 {
+    float: left;
+    margin-right: 6px;
+    font-size: 2.75em;
+  }
   .video-container {
-    padding-top: 0; }
-    .video-container video {
-      padding: 0; }
-
+    padding-top: 0;
+  }
+  .video-container video {
+    padding: 0;
+  }
   .season-guests-row {
-    padding: 0 30px 0 10px; }
-
+    padding: 0 30px 0 10px;
+  }
   .bottom-half {
-    padding: 0; } }
+    padding: 0;
+  }
+}
+
 @media (max-width: 620px) {
   .time img {
-    width: initial; }
-
+    width: initial;
+  }
   .season-guests-celebrity {
     width: 50%;
     height: inherit;
-    margin-bottom: 50px; }
-
+    margin-bottom: 50px;
+  }
   .video-overlay-play-button {
-    padding: 10px calc(54% - 50px); }
-
+    padding: 10px calc(54% - 50px);
+  }
   .st0 {
-    stroke-width: 10px !important; }
-
+    stroke-width: 10px !important;
+  }
   .video-container {
-    padding-bottom: 100%; }
-
+    padding-bottom: 100%;
+  }
   video[poster] {
-    object-fit: cover; } }
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 350px) {
   .nav-stripe {
-    height: 122px; }
-
+    height: 122px;
+  }
   .logo img {
-    width: 275px; }
-
+    width: 275px;
+  }
   .time img {
-    width: 260px; }
-
+    width: 260px;
+  }
   .life-stories-title h2 {
-    font-size: 2.5em; }
-
+    font-size: 2.5em;
+  }
   .life-stories-blurbs {
-    font-size: 1.125em; }
-
+    font-size: 1.125em;
+  }
   .season-guests-celebrity {
-    margin-bottom: 35px; } }
-
-/*# sourceMappingURL=main.css.map */
+    margin-bottom: 35px;
+  }
+}
